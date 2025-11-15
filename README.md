@@ -7,8 +7,7 @@ This is a simple Bash script that uses ANSI escape codes to display "Hello World
 To run the script, simply execute it in a Bash terminal:
 
 ```bash
-$ ./hello-world.sh
-```
+$ ./flash_text.sh```
 
 The script will display "Hello World!" in red and bold text, and make it appear and disappear repeatedly until you press a key.
 
@@ -16,7 +15,9 @@ The script will display "Hello World!" in red and bold text, and make it appear 
 
 You can customize the appearance of the text by modifying the `text` variable in the script. This variable uses ANSI escape codes to set the foreground color and text style of the text.
 
-For example, if you want to display the text in blue and underlined, you can modify the `text` variable as follows:
+The script currently displays the text in red and bold. If you want to change it to a different color and style (e.g., blue and underlined), you can modify the `text` variable as follows:
+```bash
+text="${red}${bold}Hello World!${reset}"```
 
 ```bash
 text="${blue}${underlined}Hello World!${reset}"
